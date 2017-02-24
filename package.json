@@ -1,0 +1,29 @@
+{
+  "name": "router420",
+  "version": "0.0.1",
+  "description": "Simple browser router based on history package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azein/router420.git"
+  },
+  "keywords": [
+    "browser",
+    "router",
+    "history",
+    "pushstate"
+  ],
+  "author": "Azein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azein/router420/issues"
+  },
+  "homepage": "https://github.com/Azein/router420#readme",
+  "dependencies": {
+    "history": "^4.5.1",
+    "react": "^15.4.2"
+  }
+}

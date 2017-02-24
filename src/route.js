@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class BasicRoute extends React.Component {
+export default class Route extends React.Component {
 
   routeMatch = () => {
     if (this.props.location === this.props.pattern) {return <this.props.component />}
@@ -20,7 +20,7 @@ export default class BasicRoute extends React.Component {
   }
 }
 
-BasicRoute.propTypes = {
+Route.propTypes = {
   location: React.PropTypes.string,
   pattern: React.PropTypes.string
 }

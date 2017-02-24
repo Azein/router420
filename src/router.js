@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class BasicRouter extends React.Component {
+export default class Router extends React.Component {
   constructor(props){
     super(props)
     this.state = {
@@ -41,7 +41,7 @@ export default class BasicRouter extends React.Component {
   }
 }
 
-BasicRouter.propTypes = {
+Router.propTypes = {
   history: React.PropTypes.object,
   children: React.PropTypes.array
 }

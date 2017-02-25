@@ -1,4 +1,4 @@
-import { browserHistory, locationPush, locationReplace} from './history'
-import Router from './router'
-import Route from './route'
-import Redirect from './redirect'
+export { browserHistory, locationPush, locationReplace} from './history'
+export Router from './router'
+export Route from './route'
+export Redirect from './redirect'

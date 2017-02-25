@@ -2,7 +2,7 @@
   "name": "router420",
   "version": "0.0.1",
   "description": "Simple browser router based on history package",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "test",
     "build": "babel src --out-dir dist"

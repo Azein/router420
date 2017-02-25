@@ -2,7 +2,7 @@
 Basic browser router based on history package
 
 ### Purpose of this yet another clientside SPA router
-I built this with a goal of having very simple browser router for my React.js projects. The code is very down-to-earth, yet capable to do it's job - routing, redirecting, working with protected routes/
+I built this with a goal of having very simple browser router for my React.js projects. The code is very down-to-earth, yet capable to do it's job - routing, redirecting, working with protected routes.
 
 ### How to use
 Install the package with [npm](https://www.npmjs.com/):

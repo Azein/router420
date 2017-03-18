@@ -52,5 +52,5 @@ import { locationPush, locationReplace } from 'router420';
 locationPush('/some/cool/route')
 ```
 
-###Important issue
+### Important issue
 Beware that for now React forbids to return array of elements without wrapping tags, so this router will produce one container div which you can style through passing prop "styles". This isn't cool and I will fix that issue.

@@ -6,14 +6,12 @@ export default class Router extends React.Component {
     this.state = {
       location: this.props.history.location.pathname
     }
+    this.unlisten = null;
   }
 
   shouldComponentUpdate = (nextProps, nextState) => {
-    if(nextState.location === this.state.location){
-      return false
-    } else {
-      return true
-    }
+    return !(nextState.location === this.state.location)
+
   }
 
   updateLocation = (location) => {
@@ -22,9 +20,14 @@ export default class Router extends React.Component {
   }
 
   componentWillMount(){
-    this.props.history.listen((location, action) => {
+    this.unlisten = this.props.history.listen((location, action) => {
       this.updateLocation(location)
     })
+  }
+
+  componentWillUnmount(){
+    this.unlisten();
+    this.unlisten = null;
   }
 
   render(){

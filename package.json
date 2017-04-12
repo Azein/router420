@@ -1,6 +1,6 @@
 {
   "name": "router420",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple browser router based on history package",
   "main": "./dist/index.js",
   "scripts": {

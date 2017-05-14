@@ -3,6 +3,9 @@ import React from 'react';
 export default class Route extends React.Component {
 
   routeMatch = () => {
+    if (!this.props.hasOwnProperty('exactly') && this.props.location.includes(this.props.pattern)) {
+      return <this.props.component/>
+    }
     if (this.props.location === this.props.pattern) { return <this.props.component /> }
     if (this.props.pattern.includes(':'){
       const params = this.parseRouteVals(this.props.pattern, this.props.location)
